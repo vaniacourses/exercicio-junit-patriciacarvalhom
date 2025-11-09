@@ -10,6 +10,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+
 import produto.Produto;
 import produto.ProdutoNaoEncontradoException;
 
@@ -24,9 +25,9 @@ public class CarrinhoTesteAluna {
   public void instanciando() {
     car = new Carrinho();
 
-    produto1 = new Produto(nome: "estojo", 30.00);
-    produto2 = new Produto(nome: "caderno", preco: 20.00);
-    produto3 = new Produto(nome: "agenda", 50.00);
+    produto1 = new Produto("estojo", 30.00);
+    produto2 = new Produto("caderno", 20.00);
+    produto3 = new Produto("agenda", 50.00);
   }
    
   @DisplayName("Testa a adição de itens e o cálculo do valor total")
