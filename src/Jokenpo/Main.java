@@ -1,7 +1,7 @@
 public class Main {
 
     /**
-     * Esse método calcula o vencedor do jogo Jokenpo (pedra, papel e tesoura)
+     * Esse mï¿½todo calcula o vencedor do jogo Jokenpo (pedra, papel e tesoura)
      * As escolhas podem ser 1 (papel), 2 (pedra) e 3 (tesoura)
      * 
      * @param jogador1
@@ -9,7 +9,7 @@ public class Main {
      * @param jogador2
      *                 Escolha do jogador 2
      * @return 0 se houve empate, 1 se jogador 1 venceu, 2 se jogador 2 venceu,
-     *         -1 se opção é inválida
+     *         -1 se opï¿½ï¿½o ï¿½ invï¿½lida
      */
     public int jogar(int jogador1, int jogador2) {
         int retorno = 0;
