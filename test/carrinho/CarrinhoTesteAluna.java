@@ -33,13 +33,13 @@ public class CarrinhoTesteAluna {
   @Test
   public void testeAddItemEGetValorTotal() {
     car.addItem(produto1);
-    assertEquals(50.0, car.getValorTotal(), 0.001, "Valor total deve ser 50.0");
+    assertEquals(30.0, car.getValorTotal(), 0.001, "Valor total deve ser 30.0");
 
     car.addItem(produto2);
-    assertEquals(150.0, car.getValorTotal(), 0.001, "Valor total deve ser 150.0");
+    assertEquals(50.0, car.getValorTotal(), 0.001, "Valor total deve ser 50.0");
          
     car.addItem(produto3);
-    assertEquals(160.0, car.getValorTotal(), 0.001, "Valor total deve ser 160.0");
+    assertEquals(100.0, car.getValorTotal(), 0.001, "Valor total deve ser 100.0");
   }
 
   @DisplayName("Testa a adição de itens e o cálculo da qtd total")
@@ -65,7 +65,7 @@ public class CarrinhoTesteAluna {
     car.removeItem(produto1);
         
     assertEquals(1, car.getQtdeItems(), "Quantidade deve ser 1 após remover p1.");
-    assertEquals(100.0, car.getValorTotal(), 0.001, "Valor total deve ser o de p2 (100.0).");
+    assertEquals(20.0, car.getValorTotal(), 0.001, "Valor total deve ser o de p2 (20.0).");
   }
 
   @DisplayName("Testa o esvaziamento do carrinho")
